@@ -1,21 +1,23 @@
 <script>
-    import { onMount } from 'svelte';
+   import { onMount } from 'svelte';
+    import CountryCard from '$lib/CountryCard.svelte';
 
 
     // country finder
 
-    let selectedCountry = '';
+   let selectedCountry = $state('');
     let marker;
 
 
     //map setup
 
-   onMount(async () => {
+    onMount(async () => {
       const leaflet = await import('leaflet');
       const L = leaflet.default ?? leaflet;
       await import('leaflet/dist/leaflet.css');
 
       const map = L.map('map').setView([0,0], 2);
+      map.setMaxBounds([[-90, -180], [90, 180]]);
 
       L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
          maxZoom: 19,
@@ -35,16 +37,13 @@
 
             const res = await fetch(url);
             const data = await res.json();
-
             selectedCountry = data.countryName || 'Country not found';
 
             if (marker) marker.remove();
-            marker = L.marker ([latitude, longitude]).addTo(map).bindPopup(selectedCountry).openPopup();
-            } catch (error) {
+            marker = L.marker([latitude, longitude]).addTo(map);
+            } catch {
             selectedCountry = 'Error fetching country';
          }
-
-         return () => map.remove();
         });
 
 
@@ -53,3 +52,6 @@
 </script>
 
 <div id="map" class="m-5" style="height: 600px;"></div>
+
+<CountryCard country={selectedCountry}/>
+
