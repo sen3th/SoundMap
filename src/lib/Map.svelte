@@ -54,4 +54,3 @@
 <div id="map" class="m-5" style="height: 600px;"></div>
 
 <CountryCard country={selectedCountry}/>
-
