@@ -1,22 +1,7 @@
-# sv
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
 
-## Creating a project
-
-If you're seeing this, you've probably already done this step. Congrats!
-
-```sh
-# create a new project
-npx sv create my-app
-```
-
-To recreate this project with the same configuration:
-
-```sh
-# recreate this project
-npx sv@0.12.7 create --template minimal --no-types --add prettier eslint tailwindcss="plugins:typography" sveltekit-adapter="adapter:netlify" --install npm SoundMap
-```
+# SoundMap
+SoundMap is a site that maps interesting music from around the world. Please feel free to contribute by adding new playlists, improving existing ones, or suggesting changes to the site.
 
 ## Developing
 
@@ -38,5 +23,3 @@ npm run build
 ```
 
 You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
