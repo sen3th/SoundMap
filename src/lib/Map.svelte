@@ -40,7 +40,14 @@
             selectedCountry = data.countryName || 'Country not found';
 
             if (marker) marker.remove();
-            marker = L.marker([latitude, longitude]).addTo(map);
+            marker = L.marker([latitude, longitude], {
+               icon: L.icon({
+                  iconUrl: 'https://cdn.pixabay.com/animation/2023/04/06/16/10/16-10-43-442_512.gif',
+                  iconSize: [45, 45],
+                  iconAnchor: [12, 41],
+                  popupAnchor: [1, -34],
+               })
+            }).addTo(map);
             } catch {
             selectedCountry = 'Error fetching country';
          }
@@ -52,7 +59,7 @@
 </script>
 
 <div class="m-5 flex flex-col gap-5 lg:flex-row lg:items-start">
-   <div id="map" class="w-full lg:w-2/3" style="height: 400px;"></div>
+   <div id="map" class="w-full lg:w-2/3" style="height: 500px;"></div>
 
    <div class="w-full lg:w-1/3">
       <CountryCard country={selectedCountry}/>
