@@ -59,7 +59,7 @@
 </script>
 
 <div class="m-5 flex flex-col gap-5 lg:flex-row lg:items-start">
-   <div id="map" class="w-full lg:w-2/3 rounded-[20px] border-1" style="height: 500px;"></div>
+   <div id="map" class="w-full lg:w-2/3 rounded-[20px] border" style="height: 500px;"></div>
 
    <div class="w-full lg:w-1/3">
       <CountryCard country={selectedCountry}/>
