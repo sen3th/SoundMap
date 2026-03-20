@@ -195,7 +195,9 @@
     'Viet Nam': 'https://open.spotify.com/embed/playlist/1mvtazNJybNmsRmeTNjdEf',
     'Yemen': 'https://open.spotify.com/embegud/playlist/37i9dQZF1DX2LJXoyg2yd7',
     'Zambia': 'https://open.spotify.com/embed/playlist/3AxsN9foojNcuPI9OXnVIB',
-    'Zimbabwe': 'https://open.spotify.com/embed/playlist/0y9e3OxsNztYAT8m0yXFdO'
+    'Zimbabwe': 'https://open.spotify.com/embed/playlist/0y9e3OxsNztYAT8m0yXFdO',
+
+    'Greenland': 'https://open.spotify.com/embed/playlist/5K6E8fXPQZqlzGnCwEFluh'
   };
 
   const getPlaylist = (countryName) => playlists[countryName] || '';
