@@ -3,6 +3,8 @@
 # SoundMap
 SoundMap is a site that maps interesting music from around the world. Please feel free to contribute by adding new playlists, improving existing ones, or suggesting changes to the site.
 
+This project uses [Svelte](https://svelte.dev/) and [Leaflet](https://leafletjs.com/).
+
 ## Developing
 
 Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
