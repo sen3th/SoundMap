@@ -51,6 +51,11 @@
    });
 </script>
 
-<div id="map" class="m-5" style="height: 600px;"></div>
+<div class="m-5 flex flex-col gap-5 lg:flex-row lg:items-start">
+   <div id="map" class="w-full lg:w-2/3" style="height: 400px;"></div>
 
-<CountryCard country={selectedCountry}/>
+   <div class="w-full lg:w-1/3">
+      <CountryCard country={selectedCountry}/>
+   </div>
+</div>
+

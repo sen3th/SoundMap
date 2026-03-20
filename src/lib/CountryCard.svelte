@@ -77,7 +77,7 @@
     'Iceland': 'https://open.spotify.com/embed/playlist/28eBhAwh4s7NJL8H8PJ5v6',
     'India': 'https://open.spotify.com/embed/playlist/7t8h9JIXRzuZzLlrZWPBmA',
     'Indonesia': 'https://open.spotify.com/embed/playlist/5Wh14KMrdMwRzU4lU8Zc9z',
-    'Iran': 'https://open.spotify.com/embed/playlist/37i9dQZF1DWTdXUHh0Sn4s',
+    'Iran (Islamic Republic of)': 'https://open.spotify.com/embed/playlist/37i9dQZF1DWTdXUHh0Sn4s',
     'Iraq': 'https://open.spotify.com/embed/playlist/1yjEvRfnW6WdMjvHe2FbyQ',
     'Ireland': 'https://open.spotify.com/embed/playlist/2IOdCR21ZTtVioBqgOsJQr',
     'Israel': 'https://open.spotify.com/embed/playlist/6rr1hPgc86HrTwm2wiWyCF',
@@ -164,7 +164,7 @@
     'South Sudan': 'https://open.spotify.com/embed/playlist/2domD3pH2tbubm1FwhJVw9',
     'Spain': 'https://open.spotify.com/embed/playlist/5hQaM0nbZUOmJfKmn7d1Xr',
     'Sri Lanka': 'https://open.spotify.com/embed/playlist/78jbUTdh5X5qe72rikqrxS',
-    'Sudan': 'https://open.spotify.com/embed/playlist/37i9dQZF1DX15iTqq2X8NE',
+    'Sudan (the)': 'https://open.spotify.com/embed/playlist/37i9dQZF1DX15iTqq2X8NE',
     'Suriname': 'https://open.spotify.com/embed/playlist/1hXHzQxSj3W7Ejd9H2rU54',
     'Swaziland': 'https://open.spotify.com/embed/playlist/5F1lc49YcCuT6fEQsgv8lw',
     'Sweden': 'https://open.spotify.com/embed/playlist/5sjIhYs9VdRLVRwQimhRq6',
@@ -195,13 +195,13 @@
     'Vietnam': 'https://open.spotify.com/embed/playlist/1mvtazNJybNmsRmeTNjdEf',
     'Yemen': 'https://open.spotify.com/embed/playlist/37i9dQZF1DX2LJXoyg2yd7',
     'Zambia': 'https://open.spotify.com/embed/playlist/3AxsN9foojNcuPI9OXnVIB',
-    'Zimbabwe': 'https://open.spotify.com/playlist/0y9e3OxsNztYAT8m0yXFdO?si=MPUifnxfSc6LDX1waa4cXQ'
+    'Zimbabwe': 'https://open.spotify.com/embed/playlist/0y9e3OxsNztYAT8m0yXFdO'
   };
 
   const getPlaylist = (countryName) => playlists[countryName] || '';
 </script>
 
-<div class="bg-white rounded-lg shadow-lg p-4 max-w-sm mx-auto mt-4">
+<div class="bg-antiquewhite rounded-lg  p-3 max-w-sm mx-auto mt-4">
   <h3 class="text-xl font-bold mb-2">Country Info</h3>
   <p class="text-lg">{country || '(no data)'}</p>
   <hr class="my-3" />
@@ -209,10 +209,10 @@
   <iframe
     data-testid="embed-iframe"
     title="Spotify playlist"
-    style="border-radius:12px"
+    style="border-radius:1px"
     src={getPlaylist(country)}
     width="100%"
-    height="352"
+    height="351"
     frameborder="0"
     allowfullscreen
     allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
