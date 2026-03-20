@@ -180,7 +180,7 @@
     'Tonga': 'https://open.spotify.com/embed/playlist/4yT338mUv8PeCSX1JgxHZR',
     'Trinidad & Tobago': 'https://open.spotify.com/embed/playlist/7kLbQQaYrdGqMMrFq1h3lX',
     'Tunisia': 'https://open.spotify.com/embed/playlist/0PAK2TYrXeQBrXCMzSELCH',
-    'Turkey': 'https://open.spotify.com/embed/playlist/4oKodlbJBRKSssO8LhsisY',
+    'Turkiye': 'https://open.spotify.com/embed/playlist/4oKodlbJBRKSssO8LhsisY',
     'Turkmenistan': 'https://open.spotify.com/embed/playlist/4kmst9TqzRUeXBVTj8GQ81',
     'Tuvalu': 'https://open.spotify.com/embed/playlist/2i5vsgc8zPAAdzAYBoRcuR',
     'Uganda': 'https://open.spotify.com/embed/playlist/59TVx2MmmBfg0BqRc7CvqM',
